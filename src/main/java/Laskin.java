@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Laskin {
     public int addMe(int a, int b) {
         return a + b;
@@ -16,9 +18,14 @@ public class Laskin {
     }
     public static void main(String[] args) {
         Laskin ls = new Laskin();
-        System.out.println(ls.addMe(12, 2));
-        System.out.println(ls.subtractMe(12, 2));
-        System.out.println(ls.multiplyMe(12, 2));
-        System.out.println(ls.divideMe(12, 2));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number:");
+        int a = sc.nextInt();
+        System.out.println("Enter the second number:");
+        int b = sc.nextInt();
+        System.out.println(ls.addMe(a, b));
+        System.out.println(ls.subtractMe(a, b));
+        System.out.println(ls.multiplyMe(a, b));
+        System.out.println(ls.divideMe(a, b));
     }
 }
